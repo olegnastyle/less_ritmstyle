@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url(../style/font/Proxima_Nova_Regular.otf);
+}
+
+body {
+    background-color: #162831;
+    width: 1296px;
+    margin: 0 auto;
+    font-family: 'Proxima Nova';
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "El Messiri", sans-serif;
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0 50px 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+ul a:hover {
+    text-decoration: underline;
+}
+
+.seance_add {
+    background-color: #018ABE;
+    padding: 9px 15px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.seance_add:hover {
+    filter: brightness(1.4);
+}
+
+/* main */
+
+#banner {
+    background-image: url(../style/img/bg-banner.jpeg);
+    background-size: cover;
+    background-position: 0 -130px;
+    background-repeat: no-repeat;
+    background-color: #98c9dc8d;
+    background-blend-mode: color;
+    border-radius: 10px;
+    height: 600px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#banner h1 {
+    font-weight: 700;
+    font-size: 64px;
+}
+#banner h2 {
+    display: flex;
+    gap: 66px;
+    font-weight: 700;
+    font-size: 24px;
+}
+#banner h2::before {content: url(../style/img/decore-white-left.svg);}
+#banner h2::after {content: url(../style/img/decore-white-right.svg);}
